@@ -1,0 +1,445 @@
+*{
+    margin :0;
+    padding :0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 2px;
+}
+.logo img{
+    border: 2px solid rgb(2, 204, 255);
+    border-radius: 50%;
+    width: 32%;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* position: sticky; */
+    top: 0;
+    cursor: pointer;
+}
+.navList{
+    justify-content: left;
+    align-items: center;
+    display: flex;
+    width: 100%;
+
+}
+
+.navList li{
+    padding: 1% 2%;
+    list-style: none;
+}
+.navList li a{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navList li a:hover{
+    color: rgb(250, 198, 206);
+    text-decoration: underline;
+    
+}
+.background{
+    background: rgba(0, 0, 0, 0.7) url('../img/bg.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(253, 253, 221);
+    padding: 147px 33px;
+    margin: auto;
+    font-family:'Nunito Sans', sans-serif;
+    max-width: 70%; 
+    height: 50%;
+}
+.firstsec{
+    height: 90vh;
+    display: flex;
+    padding: 2px 2px;
+}
+.firsthalf{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.secondhalf{
+    width: 30%;
+}
+.secondhalf img{
+    width: 69%;
+    border: 4px solid white;
+    border-radius: 150px;
+    display: block;
+    margin: auto;
+}
+.big{
+    font-size: 45px;
+}
+.small{
+    font-size: 16px;
+}
+.button{
+    padding: 10px 4px;
+    margin: auto;
+}
+.btn{
+    padding: 8px 32px;
+    display: flex;
+    margin: auto;
+    border: 2px solid rgb(240, 240, 240);
+    border-radius: 8px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+    background: none;
+    cursor: pointer;
+}
+.btn:hover{
+    color: rgb(138, 72, 72);
+    background-color: rgb(250, 225, 225);
+    border-color: rgb(0, 0, 0);
+}
+.para{
+    font-family:'Nunito Sans', sans-serif;
+    font-size: 14px;
+}
+.head{
+    /* font-family:'Nunito Sans', sans-serif; */
+    font-size: 23px;
+    font-weight: bold;
+}
+.paras{
+    padding: 0px 15px ;
+    /* font-family: 'Ubuntu', sans-serif; */
+}
+.secleft{
+    height: 330px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly; 
+    align-items: center;
+    max-width: 80%;
+    margin: auto;
+    padding-top: 10px;
+    /* font-family:'Nunito Sans', sans-serif; */
+}
+.secright{
+    height: 250px;
+    display: flex;
+    /* justify-content: space-evenly;  */
+    align-items: center;
+    max-width: 80%;
+    margin-top: -67px;
+    margin: auto;
+    /* font-family:'Nunito Sans', sans-serif; */
+}
+.picture img{
+     padding: 2px 30px;
+     margin-top: 50px;
+     /* border-radius: 110px;   */
+}   
+.bg{
+    background-color: rgb(251, 245, 233);
+}  
+.text{
+    font-size: 30px;
+    text-align: center;
+}
+.foot{
+    color: rgb(250, 250, 250);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 2px 0px;
+}
+.burger{
+    position:absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+    display: none;
+}
+.line{
+    width: 33px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    height: 4px;
+    margin: 5px 3px;
+    
+}
+@media only screen and (max-width:700px){
+     .navList{
+         flex-direction: column;
+         align-items: center;
+     }
+     .burger{
+         display: block;
+     }
+     .navbar{
+         height: 60px;
+         transition: all 0.4s ease-out;
+        }
+        .h-nav{
+         flex-direction: column;
+         height: 150px;
+     }
+     .v-class{
+         opacity: 0;
+     }
+     .logo img{
+         width: 45%;
+     }
+} 
+@media only screen and (max-width: 700px) and (min-width: 600px){
+    .navList li a{
+        font-size: 15px;
+    }
+    .big{
+        font-size: 33px;
+    }
+    .small{
+        font-size: 13px;
+    }
+    .head{
+        font-size: 27px;
+    }
+    .para{
+        font-size: 14px;
+    }
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 100%;
+        height: 47%;
+        margin-top: -38px;
+    }
+    .secondhalf img{
+        width: 40%;
+    }
+    .secondhalf{
+        padding-bottom: 34px;
+    }
+    .picture img{
+        border-radius: 70px;
+        margin-top: -14px;
+    }
+    .secleft{
+        flex-direction: column;
+        height: 642px;
+        width: 80%;
+    }
+    .secright{
+        margin-top: -39px;
+        height: 430px;
+        width: 80%;
+    }
+    .paras{
+        padding: 40px 15px;
+    }
+    .firstsec{
+        height: 70vh;
+    }
+    .line{
+        width: 33px;
+        height: 3px;
+        margin: 5px 3px;
+        
+    }
+}     
+@media only screen and (max-width: 900px) and (min-width: 700px){
+    .firstsec{
+        height: 97vh;
+    }
+    .secleft{
+        flex-direction: column;
+        height: 608px;
+        width: 80%;
+        margin-bottom: -50px;
+    }
+    .picture img{
+        margin-top: -10px;
+        border-radius: 50px;
+    }
+    .secright{
+        height: 380px;
+    }
+    .box-main{
+        height: 30%;
+    }
+    .big{
+        font-size: 39px;
+    }
+    .small{
+        font-size: 15px;
+    }
+    .para{
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width: 1329px) and (min-width: 900px){
+    .secleft{
+        flex-direction: column;
+        height: 495px;
+        width: 80%;
+        margin-bottom: -50px;
+    }
+    .picture img{
+        margin-top: -10px;
+        border-radius: 60px;
+    }
+    .secright{
+        height: 355px;
+    }
+    .box-main{
+        height: 30%;
+    }
+    .big{
+        font-size: 38px;
+    }
+    .small{
+        font-size: 15px;
+    }
+    .head{
+       font-size:28px ;
+    }
+    .para{
+        font-size: 13x;
+    }
+    .firstsec{
+        height: 82vh;
+    }
+    .navList li a{
+        font-size: 23px;
+    }
+}
+@media only screen and (min-width:400px) and (max-width:600px){
+    .line{
+        width: 26px;
+    }
+    .navbar{
+        width: 100%;
+    }
+    .big{
+        font-size: 19px;
+        font-weight: bolder;
+    }
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 100%;
+        height: 40%;
+    }
+    .firstsec{
+        height: 80vh;
+    }
+    .small{
+        font-size: 13px;
+    }
+    .secondhalf{
+        padding-bottom: 26px;
+    }
+    .secleft{
+        flex-direction: column;
+        height: 555px;
+        max-width: 100%;
+    }
+    .head{
+        font-size: 19px;
+    }
+    .para{
+        font-size: 12px;
+    }
+    .secright{
+        height: 455px;
+        max-width: 100%;
+        margin-top: -95px;
+    }
+    .picture img{
+        margin-top: 9px;
+    }
+    .navList li a{
+        font-size: 16px;
+    }
+    .h-nav{
+        height: 120px;
+    }
+    .btn{
+        font-size: 14px;
+        padding: 6px 8px;
+    }
+    .firsthalf{
+        width: 100%;
+    }
+}
+@media only screen and (max-width:400px){
+    .line{
+        width: 26px;
+    }
+    .navbar{
+        width: 100%;
+    }
+    .big{
+        font-size: 19px;
+        font-weight: bolder;
+    }
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 100%;
+        height: 40%;
+    }
+    .firstsec{
+        height: 80vh;
+    }
+    .small{
+        font-size: 13px;
+    }
+    .secondhalf{
+        padding-bottom: 26px;
+    }
+    .secleft{
+        flex-direction: column;
+        height: 695px;
+        max-width: 100%;
+    }
+    .head{
+        font-size: 19px;
+    }
+    .para{
+        font-size: 12px;
+    }
+    .secright{
+        height: 539px;
+        max-width: 100%;
+        margin-top: -100px;
+    }
+    .picture img{
+        margin-top: 9px;
+    }
+    .navList li a{
+        font-size: 16px;
+    }
+    .h-nav{
+        height: 120px;
+    }
+    .btn{
+        font-size: 14px;
+        padding: 6px 8px;
+    }
+    .firsthalf{
+        width: 100%;
+    }
+}
